@@ -10,16 +10,9 @@
 
 <div class="container">
     <div class="row">
-         <div class="col-md-3">
-		    <img src="dewis.jpg">
-			<img src="dewis.jpg">
-			<img src="dewis.jpg">
-			<img src="dewis.jpg">
-			
-		 </div>
-   
-     <div class="col-md-7 thumbnail set" style="background-color:#FF9999">
-	      <div ng-repeat="resturant in resturants | filter:searchStr">
+        
+     <div class="col-md-8 col-md-offset-1 thumbnail set" >
+	       <div ng-repeat="resturant in resturants | filter:searchStr"><br/><br/>
 	    <div class="media-left">
 	     <img ng-src={{resturant.imageUrl}} style="width:140px">
 		</div>
@@ -61,11 +54,24 @@
 		
 	</div>
 	 </div>
-	
+		
 	 
 	
 	</div>
-	
+	   
+	    <h1 class="heading">Delicious Foods</h1>
+	    
+           <div class="col-md-3">
+		 <ul ng-repeat="image in images">
+		    <li class="navlist " > 
+			   <img ng-src={{image}} >
+			   </li>
+		
+		    </ul>
+			
+		 </div>
+   
+		 
   </div>
  </div>
 

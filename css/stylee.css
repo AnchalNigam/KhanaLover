@@ -11,7 +11,7 @@
 }
 .tagline{
 	position:absolute;
-	/*left:4%;*/
+	left:4%;
 	top:50%;
 	color:white;
 	font-family:garamond;
@@ -20,7 +20,7 @@
 }
 .logo{
 	position:absolute;
-	/*left:4%;*/
+	left:4%;
 	top:25%;
 	
 	
@@ -36,11 +36,21 @@
 }
 .set{
 	padding:20px;
+	background-color:#FFFF99;
+	border:2px solid #787878;
 }
 .rating{
 	background-color:#33CC66;
 	padding:8px;
 	
+	
+	
+}
+.heading{
+	font-family:garamond;
+	color:#FF0000;
+	position:relative;
+	left:6%;
 	
 	
 }

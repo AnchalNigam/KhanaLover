@@ -186,5 +186,7 @@ foodieapp.controller('listRestro', function($scope) {
 		imageUrl:"eaton.jpg"
 		
 	}];
+	  $scope.images=["14.jpg","15.png","16.jpg","17.jpg","5.png","6.png","7.png","8.png","9.png"
+	  ,"10.png","11.png","12.jpg","13.png"];
    
 });
