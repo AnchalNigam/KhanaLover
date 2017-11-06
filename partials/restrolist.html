@@ -1,0 +1,67 @@
+<!--Resturants list-->
+<!--Display of resturaunts-->
+<div class="container" ><br/><br/>
+<form >
+  <div class="form-group ">
+   
+    <input type="text" class="form-control" placeholder="Search Resturants..." ng-model="searchStr">
+  </div>
+</form><br/><br/><br/>
+<div ng-repeat="resturant in resturants | filter:searchStr">
+<div class="container">
+    <div class="row">
+  
+   
+     <div class="col-md-8 col-md-offset-2 thumbnail set" style="background-color:#FF9999">
+	      
+	    <div class="media-left">
+	     <img ng-src={{resturant.imageUrl}} style="width:140px">
+		</div>
+		 <div class="media-body">
+		    <ul class="list-unstyled">
+			    <span class="pull-right thumbnail rating" ><strong>{{resturant.vote}}</strong></span>
+				<span class="look"><a ng-href="#/resturants/{{resturant.id}}"><strong>{{ resturant.name }}</strong></a></span>
+				<li><strong>{{resturant.location}}</strong></li>
+				<li><small>{{ resturant.address}}</small></li>
+				<li><cite><small>{{resturant.category}}</cite></small></li>
+			</ul>
+		 </div>
+				 <table class="table"><br/><br/><br/>
+			
+					<tbody>
+					  <tr>
+						<td><small>CUISINES:</small></td>
+						<td><strong>{{ resturant.cuisines}}</strong></td>
+						
+					  </tr>
+					  <tr>
+						<td><small>COST FOR TWO:</small></td>
+						<td><strong>{{resturant.cost | currency:'Rs.'}}</strong></td>
+						
+					  </tr>
+					  <tr>
+						<td><small>HOURS:</td>
+						<td><strong>{{ resturant.timing}}</strong></td>
+						
+					  </tr>
+					</tbody>
+		  </table>
+		  <div ng-if="resturant.images">
+		    {{resturant.name}}
+		    
+		       <li class="navlist" ng-repeat="image in resturant.images"> 
+			   <img  ng-src={{image}} >
+			   </li>
+		
+	</div>
+	 </div>
+	
+	 
+	
+	</div>
+	
+  </div>
+ </div>
+
+ 
+</div>

@@ -1,0 +1,54 @@
+<!--Resturant Information-->
+
+ <div ng-if="resturant.name">
+   <div class="container">
+    <div class="row">
+     <div class="col-md-8 col-md-offset-2 col-xs-11 col-xs-offset-1 thumbnail set">
+	    <div class="media-left">
+	     <img ng-src={{resturant.imageUrl}} style="width:140px">
+		</div>
+		 <div class="media-body">
+		    <ul class="list-unstyled">
+			    <span class="pull-right thumbnail rating" ><strong>{{resturant.vote}}</strong></span>
+				<span class="look"><strong>{{ resturant.name }}</strong></span>
+				<li><strong>{{resturant.location}}</strong></li>
+				<li><small>{{ resturant.address}}</small></li>
+				<li><cite><small>{{resturant.category}}</cite></small></li>
+			</ul>
+		 </div>
+				 <table class="table"><br/><br/><br/>
+			
+					<tbody>
+					  <tr>
+						<td><small>CUISINES:</small></td>
+						<td><strong>{{ resturant.cuisines}}</strong></td>
+						
+					  </tr>
+					  <tr>
+						<td><small>COST FOR TWO:</small></td>
+						<td><strong>{{resturant.cost | currency:'Rs.'}}</strong></td>
+						
+					  </tr>
+					  <tr>
+						<td><small>HOURS:</td>
+						<td><strong>{{ resturant.timing}}</strong></td>
+						
+					  </tr>
+					</tbody>
+		  </table>
+		
+	 </div>
+	</div>
+  </div>
+ </div>
+</div><br/><br/><br/><br/>
+<div ng-hide="resturant.name">
+	<div class="container">
+	   <div class="row">
+	      <div class="col-md-11 col-md-offset-1 text-center">
+	          <img src="404.jpg" class="img-responsive center-block">
+			  <h2>Resturant Not Found</h2>
+	       </div> 
+	   </div>
+	</div>
+</div>

@@ -1,0 +1,56 @@
+.navbar-custom{
+	 background: #FF9966 ;
+	
+}
+.myjumbotron {
+  background-image:url('header.jpg');
+  height:500px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  border:2px solid black;
+}
+.tagline{
+	position:absolute;
+	/*left:4%;*/
+	top:50%;
+	color:white;
+	font-family:garamond;
+	
+	
+}
+.logo{
+	position:absolute;
+	/*left:4%;*/
+	top:25%;
+	
+	
+}
+
+.look {
+	font-family:garamond;
+	color:#FF9966;
+	font-size:40px;
+	
+	
+	
+}
+.set{
+	padding:20px;
+}
+.rating{
+	background-color:#33CC66;
+	padding:8px;
+	
+	
+	
+}
+.navlist
+{
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}   
+
+h1{
+	color:pink;
+}
