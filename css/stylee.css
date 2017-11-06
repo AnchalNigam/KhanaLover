@@ -9,6 +9,21 @@
   background-size:cover;
   border:2px solid black;
 }
+.footjumbo {
+  
+  height:300px;
+  background-color:#808080;
+  
+}
+.colorback{
+	background-color:#E0E0E0;
+}
+.foottext{
+	color:aqua;
+	font-family:garamond;
+	
+	
+}
 .mycover{
   background-image:url('back.jpg');
   height:400px;
@@ -20,6 +35,15 @@
 	position:absolute;
 	left:4%;
 	top:50%;
+	color:white;
+	font-family:garamond;
+	
+	
+}
+.btnalign{
+	position:absolute;
+	left:35%;
+	top:70%;
 	color:white;
 	font-family:garamond;
 	
@@ -108,9 +132,9 @@ color:white;
 {
   display: inline;
   list-style-type: none;
-  padding-right: 30px;
+  padding-right: 10px;
 }   
 
 h1{
-	color:blue;
+	color:green;
 }

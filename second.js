@@ -3,6 +3,12 @@ foodieapp.config(function($routeProvider,$locationProvider) {
 	
 	  $locationProvider.hashPrefix('');
 	$routeProvider
+		.when("/",{
+		templateUrl:"partials/frontpage.html",
+		controller:"frontCtrl"
+	
+		
+	})
 	.when("/restrolist",{
 		templateUrl:"partials/restrolist.html",
 		controller:"listRestro"
@@ -124,7 +130,12 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
      
 });
 
-
+foodieapp.controller('frontCtrl', function($scope) {
+	 $scope.images=["14.jpg","15.png","16.jpg","17.jpg","5.png","6.png","7.png","8.png","9.png"
+	  ,"10.png","11.png","12.jpg","13.png"];
+	  $scope.trust=["ichtr.png","kohinoortr.png","tandoortr.png"];
+	
+});
 foodieapp.controller('listRestro', function($scope) {
     $scope.resturants=[
 	{
