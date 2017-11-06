@@ -77,13 +77,26 @@
 	
 	
 }
+.listheading{
+	font-family:garamond;
+	
+	color:#FF0000;
+
+	
+	
+}
+.setting{
+	padding:30px;
+	
+	
+}
 .navlist
 {
   display: inline;
   list-style-type: none;
-  padding-right: 20px;
+  padding-right: 30px;
 }   
 
 h1{
-	color:green;
+	color:yellow;
 }

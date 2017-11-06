@@ -3,20 +3,45 @@
  <div ng-if="resturant.name">
    <div class="container"><br/><br/><br/><br/>
     <div class="row" >
-	    
-	     <div class="col-md-8 col-md-offset-1 mycover"  style="background-image:url('blurr.jpg')"><br/><br/><br/>
+	    <div class="col-md-9">
+		<div class="row">
+	     <div class="col-md-9 col-md-offset-1 mycover"  style="background-image:url('blurr.jpg')"><br/><br/><br/>
          <h1 class="headrestro text-center">{{resturant.name}}</h1>
 		 
 		  <h3 class="text-center subheading">.{{resturant.category}}<br/>Delivers in: {{resturant.deliver}}<br/>
 		  Cuisines:{{resturant.cuisines}}<br/>Cost for Two: {{resturant.cost}}</h3>
 		
-		    <div class="col-md-8 col-md-offset-1 mycover"  style="background-image:url('blurr.jpg')">
-			hahahah
-		 </div>
-		  
-		</div>
+		    
+		  </div>
+		</div><br/><br/>
+		<div class="row">
+		<div class="col-md-9 col-md-offset-1 thumbnail setting">
+			<h1 class="listheading"> Menu</h1>
+			<div ng-if="resturant.menu">
+
+		    
+		       <li class="navlist" ng-repeat="image in resturant.menu"> 
+			   <img  ng-src={{image}} >
+			   </li>
 		
-		<div class="col-md-3">
+	</div>
+		 </div>
+		</div>
+		<div class="row">
+		   <div class="col-md-9 col-md-offset-1 thumbnail setting">
+			<h1 class="listheading"> Photos</h1>
+			<div ng-if="resturant.photo">
+
+		    
+		       <li class="navlist" ng-repeat="image in resturant.photo"> 
+			   <img  ng-src={{image}} >
+			   </li>
+		
+	       </div>
+		  </div>
+		</div>
+	</div>
+	<div class="col-md-2">
 		 <ul ng-repeat="image in images">
 		    <li class="navlist " > 
 			   <img ng-src={{image}} >

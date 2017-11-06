@@ -28,7 +28,8 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		category:"Casual.Dining",
 		vote:"4.8",
 		cuisines:"Modern Indian",
-		
+		menu:["menu1.png","menu2.png","menu3.png"],
+		photo:["res1.png","res2.png","res3.png"],
 		cost: "3000",
 		timing:"10AM to 12PM (MON-SUN)",
 		imageUrl:"conn.jpg",
@@ -42,7 +43,7 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		category:"Casual.Good for kids.Groups",
 		vote:"4.5",
 		cuisines:"Modern Indian",
-		
+		menu:["menu1.jpg","menu2.jpg","menu3.jpg"],
 		cost: "2000",
 		timing:"8AM to 9PM (MON-SUN)",
 		imageUrl:"coffee.jpg",
@@ -56,7 +57,8 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		category:"Casual.Good for kids.Groups",
 		vote:"4.0",
 		cuisines:"Modern Indian",
-		
+		menu:["menu1.jpg","menu2.jpg","menu3.jpg"],
+			
 		cost: "1000",
 		timing:"10AM to 9PM (MON-SUN)",
 		imageUrl:"tandoor.jpg",
@@ -69,7 +71,7 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		category:"Casual.Groups",
 		vote:"4.2",
 		cuisines:"Indian",
-		
+		menu:["menu1.jpg","menu2.jpg","menu3.jpg"],
 		cost: "2500",
 		timing:"10AM to 12PM (MON-SUN)",
 		imageUrl:"kohi.jpg",
@@ -82,7 +84,7 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		category:"Good for kids.Sandwitches",
 		vote:"3.9",
 		cuisines:"Modern Indian",
-		
+		menu:["menu1.jpg","menu2.jpg","menu3.jpg"],
 		cost: "1000",
 		timing:"9AM to 10PM (MON-SUN)",
 		imageUrl:"dewis.jpg",
@@ -95,7 +97,7 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		category:"Good for kids.Groups",
 		vote:"4.6",
 		cuisines:"Modern Indian",
-		
+	    menu:["menu1.jpg","menu2.jpg","menu3.jpg"],
 		cost: "500",
 		timing:"9AM to 10PM (MON-SUN)",
 		imageUrl:"eaton.jpg",
@@ -174,7 +176,7 @@ foodieapp.controller('listRestro', function($scope) {
 		cost: "1000",
 		timing:"9AM to 10PM (MON-SUN)",
 		imageUrl:"dewis.jpg",
-		images:["dewis.jpg","eaton.jpg"],
+		
 		deliver:"70 minutes(Max.)"
 	},
 	{
