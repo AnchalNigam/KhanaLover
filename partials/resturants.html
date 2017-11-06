@@ -8,8 +8,9 @@
 	     <div class="col-md-9 col-md-offset-1 mycover"  style="background-image:url('blurr.jpg')"><br/><br/><br/>
          <h1 class="headrestro text-center">{{resturant.name}}</h1>
 		 
-		  <h3 class="text-center subheading">.{{resturant.category}}<br/>Delivers in: {{resturant.deliver}}<br/>
-		  Cuisines:{{resturant.cuisines}}<br/>Cost for Two: {{resturant.cost}}</h3>
+		  <h3 class="text-center subheading"><strong>.{{resturant.category}}<br/>Delivers in: {{resturant.deliver}}<br/>
+		  Cuisines:{{resturant.cuisines}}<br/>Cost for Two: {{resturant.cost}}<br/>
+		  Opening Hours:{{resturant.timing}}</strong></h3>
 		
 		    
 		  </div>
@@ -38,6 +39,32 @@
 			   </li>
 		
 	       </div>
+		  </div>
+		</div>
+		<div class="row">
+		   <div class="col-md-9 col-md-offset-1 thumbnail setting">
+			<h1 class="listheading"> Contact Us</h1>
+			
+			<h4 class="contact">{{resturant.address}}</h4>
+			<div ng-if="resturant.num">
+
+		    
+		       <li class="list-inline" ng-repeat="image in resturant.num"> 
+			    <h4 class="contact"><span class="glyphicon glyphicon-phone-alt"></span> {{image}}</h4>
+			   </li>
+		
+	       </div>
+			 <img src="map.png">
+			
+		  </div>
+		</div>
+		<div class="row">
+		   <div class="col-md-9 col-md-offset-1 thumbnail setting">
+			<h1 class="listheading"> Rating</h1>
+			 <span class="pull-left thumbnail rating" ><strong>{{resturant.vote}}</strong></span>
+			 <span class="size"> &nbsp&nbspBased on {{resturant.review}} reviews</span>
+			
+			
 		  </div>
 		</div>
 	</div>

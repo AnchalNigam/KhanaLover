@@ -43,7 +43,7 @@
 }
 .set{
 	padding:20px;
-	background-color:#FFFF99;
+	background-color:#33CCCC;
 	border:2px solid #787878;
 }
 .rating{
@@ -72,8 +72,14 @@
 .subheading{
 	font-family:garamond;
 	
-	position:relative;
-
+	
+color:white;
+	
+	
+}
+.contact{
+	font-family:garamond;
+	color:#990033;
 	
 	
 }
@@ -90,6 +96,14 @@
 	
 	
 }
+.size{
+	font-size:30px;
+	font-family:garamond;
+	color:#990033;
+}
+	
+	
+
 .navlist
 {
   display: inline;
@@ -98,5 +112,5 @@
 }   
 
 h1{
-	color:yellow;
+	color:blue;
 }

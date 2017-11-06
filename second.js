@@ -33,8 +33,9 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		cost: "3000",
 		timing:"10AM to 12PM (MON-SUN)",
 		imageUrl:"conn.jpg",
-		deliver:"45 minutes(Max.)"
-		
+		deliver:"45 minutes(Max.)",
+		num:["9026224948","9876543123","0532-2655090"],
+		review:200
 	},
 	{
 		name:"Connoisseur Restaurant",
@@ -43,12 +44,14 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		category:"Casual.Good for kids.Groups",
 		vote:"4.5",
 		cuisines:"Modern Indian",
-		menu:["menu1.jpg","menu2.jpg","menu3.jpg"],
+		menu:["menu1.png","menu2.png","menu3.png"],
+		photo:["res1.png","res2.png","res3.png"],
 		cost: "2000",
 		timing:"8AM to 9PM (MON-SUN)",
 		imageUrl:"coffee.jpg",
-		deliver:"60 minutes(Max.)"
-		
+		deliver:"60 minutes(Max.)",
+		num:["9026224948","9876543123","0532-2655090"],
+		review:200
 	},
 	{
 	    name:"Tandoor",
@@ -57,12 +60,15 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		category:"Casual.Good for kids.Groups",
 		vote:"4.0",
 		cuisines:"Modern Indian",
-		menu:["menu1.jpg","menu2.jpg","menu3.jpg"],
+		menu:["menu1.png","menu2.png","menu3.png"],
+		photo:["res1.png","res2.png","res3.png"],
 			
 		cost: "1000",
 		timing:"10AM to 9PM (MON-SUN)",
 		imageUrl:"tandoor.jpg",
-		deliver:"50 minutes(Max.)"
+		deliver:"50 minutes(Max.)",
+		num:["9026224948","9876543123","0532-2655090"],
+		review:200
 	},
 	{
 	    name:"Kohinoor Restaurant",
@@ -71,11 +77,14 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		category:"Casual.Groups",
 		vote:"4.2",
 		cuisines:"Indian",
-		menu:["menu1.jpg","menu2.jpg","menu3.jpg"],
+		menu:["menu1.png","menu2.png","menu3.png"],
+		photo:["res1.png","res2.png","res3.png"],
 		cost: "2500",
 		timing:"10AM to 12PM (MON-SUN)",
 		imageUrl:"kohi.jpg",
-			deliver:"30 minutes(Max.)"
+			deliver:"30 minutes(Max.)",
+			num:["9026224948","9876543123","0532-2655090"],
+			review:200
 	},
 	{
 		name:"Dewsis",
@@ -84,11 +93,14 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		category:"Good for kids.Sandwitches",
 		vote:"3.9",
 		cuisines:"Modern Indian",
-		menu:["menu1.jpg","menu2.jpg","menu3.jpg"],
+		menu:["menu1.png","menu2.png","menu3.png"],
+		photo:["res1.png","res2.png","res3.png"],
 		cost: "1000",
 		timing:"9AM to 10PM (MON-SUN)",
 		imageUrl:"dewis.jpg",
-		deliver:"70 minutes(Max.)"
+		deliver:"70 minutes(Max.)",
+		num:["9026224948","9876543123","0532-2655090"],
+		review:200
 	},
 	{
 		name:"Eat On",
@@ -97,11 +109,14 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		category:"Good for kids.Groups",
 		vote:"4.6",
 		cuisines:"Modern Indian",
-	    menu:["menu1.jpg","menu2.jpg","menu3.jpg"],
+	    menu:["menu1.png","menu2.png","menu3.png"],
+		photo:["res1.png","res2.png","res3.png"],
 		cost: "500",
 		timing:"9AM to 10PM (MON-SUN)",
 		imageUrl:"eaton.jpg",
-		deliver:"45 minutes(Max.)"
+		deliver:"45 minutes(Max.)",
+		num:["9026224948","9876543123","0532-2655090"],
+		review:200
 	}];
    $scope.resturant=resturants[$routeParams.id-1];
     $scope.images=["14.jpg","15.png","16.jpg","17.jpg","5.png","6.png","7.png","8.png","9.png"
