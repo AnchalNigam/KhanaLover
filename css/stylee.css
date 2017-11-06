@@ -9,6 +9,13 @@
   background-size:cover;
   border:2px solid black;
 }
+.mycover{
+  background-image:url('back.jpg');
+  height:400px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  border:2px solid black;
+}
 .tagline{
 	position:absolute;
 	left:4%;
@@ -50,7 +57,23 @@
 	font-family:garamond;
 	color:#FF0000;
 	position:relative;
-	left:6%;
+	left:3%;
+	
+	
+}
+.headrestro{
+	font-family:impact;
+	color:#66CCFF;
+	position:relative;
+  font-size:50px;
+	
+	
+}
+.subheading{
+	font-family:garamond;
+	
+	position:relative;
+
 	
 	
 }
@@ -62,5 +85,5 @@
 }   
 
 h1{
-	color:blue;
+	color:green;
 }

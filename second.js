@@ -31,7 +31,8 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		
 		cost: "3000",
 		timing:"10AM to 12PM (MON-SUN)",
-		imageUrl:"conn.jpg"
+		imageUrl:"conn.jpg",
+		deliver:"45 minutes(Max.)"
 		
 	},
 	{
@@ -44,8 +45,8 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		
 		cost: "2000",
 		timing:"8AM to 9PM (MON-SUN)",
-		imageUrl:"coffee.jpg"
-		
+		imageUrl:"coffee.jpg",
+		deliver:"60 minutes(Max.)"
 		
 	},
 	{
@@ -58,8 +59,8 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		
 		cost: "1000",
 		timing:"10AM to 9PM (MON-SUN)",
-		imageUrl:"tandoor.jpg"
-			
+		imageUrl:"tandoor.jpg",
+		deliver:"50 minutes(Max.)"
 	},
 	{
 	    name:"Kohinoor Restaurant",
@@ -71,8 +72,8 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		
 		cost: "2500",
 		timing:"10AM to 12PM (MON-SUN)",
-		imageUrl:"kohi.jpg"
-			
+		imageUrl:"kohi.jpg",
+			deliver:"30 minutes(Max.)"
 	},
 	{
 		name:"Dewsis",
@@ -84,8 +85,8 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		
 		cost: "1000",
 		timing:"9AM to 10PM (MON-SUN)",
-		imageUrl:"dewis.jpg"
-		
+		imageUrl:"dewis.jpg",
+		deliver:"70 minutes(Max.)"
 	},
 	{
 		name:"Eat On",
@@ -97,10 +98,12 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		
 		cost: "500",
 		timing:"9AM to 10PM (MON-SUN)",
-		imageUrl:"eaton.jpg"
-		
+		imageUrl:"eaton.jpg",
+		deliver:"45 minutes(Max.)"
 	}];
    $scope.resturant=resturants[$routeParams.id-1];
+    $scope.images=["14.jpg","15.png","16.jpg","17.jpg","5.png","6.png","7.png","8.png","9.png"
+	  ,"10.png","11.png","12.jpg","13.png"];
      
 });
 
@@ -117,8 +120,8 @@ foodieapp.controller('listRestro', function($scope) {
 		id:1,
 		cost: "3000",
 		timing:"10AM to 12PM (MON-SUN)",
-		imageUrl:"conn.jpg"
-		
+		imageUrl:"conn.jpg",
+		deliver:"45 minutes(Max.)"
 	},
 	{
 		name:"Connoisseur Restaurant",
@@ -130,8 +133,8 @@ foodieapp.controller('listRestro', function($scope) {
 		id:2,
 		cost: "2000",
 		timing:"8AM to 9PM (MON-SUN)",
-		imageUrl:"coffee.jpg"
-		
+		imageUrl:"coffee.jpg",
+		deliver:"60 minutes(Max.)"
 		
 	},
 	{
@@ -144,8 +147,8 @@ foodieapp.controller('listRestro', function($scope) {
 		id:3,
 		cost: "1000",
 		timing:"10AM to 9PM (MON-SUN)",
-		imageUrl:"tandoor.jpg"
-			
+		imageUrl:"tandoor.jpg",
+			deliver:"50 minutes(Max.)"
 	},
 	{
 	    name:"Kohinoor Restaurant",
@@ -157,8 +160,8 @@ foodieapp.controller('listRestro', function($scope) {
 		id:4,
 		cost: "2500",
 		timing:"10AM to 12PM (MON-SUN)",
-		imageUrl:"kohi.jpg"
-			
+		imageUrl:"kohi.jpg",
+		deliver:"30 minutes(Max.)"	
 	},
 	{
 		name:"Dewsis",
@@ -171,7 +174,8 @@ foodieapp.controller('listRestro', function($scope) {
 		cost: "1000",
 		timing:"9AM to 10PM (MON-SUN)",
 		imageUrl:"dewis.jpg",
-		images:["dewis.jpg","eaton.jpg"]
+		images:["dewis.jpg","eaton.jpg"],
+		deliver:"70 minutes(Max.)"
 	},
 	{
 		name:"Eat On",
@@ -183,7 +187,8 @@ foodieapp.controller('listRestro', function($scope) {
 		id:6,
 		cost: "500",
 		timing:"9AM to 10PM (MON-SUN)",
-		imageUrl:"eaton.jpg"
+		imageUrl:"eaton.jpg",
+		deliver:"45 minutes(Max.)"
 		
 	}];
 	  $scope.images=["14.jpg","15.png","16.jpg","17.jpg","5.png","6.png","7.png","8.png","9.png"
