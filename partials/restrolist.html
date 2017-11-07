@@ -4,7 +4,7 @@
 <form >
   <div class="form-group ">
    
-    <input type="text" class="form-control" placeholder="Search Resturants..." ng-model="searchStr">
+    <input type="text" class="form-control" placeholder="Search Resturants by cost,locality,cuisines,category..." ng-model="searchStr">
   </div>
 </form><br/><br/><br/>
 
@@ -41,6 +41,11 @@
 					  <tr>
 						<td><small>HOURS:</td>
 						<td><strong>{{ resturant.timing}}</strong></td>
+						
+					  </tr>
+					    <tr>
+						<td><small>DELIVERS IN:</td>
+						<td><strong>{{ resturant.deliver}}</strong></td>
 						
 					  </tr>
 					</tbody>

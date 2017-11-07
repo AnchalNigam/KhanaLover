@@ -132,7 +132,7 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 
 foodieapp.controller('frontCtrl', function($scope) {
 	 $scope.images=["14.jpg","15.png","16.jpg","17.jpg","5.png","6.png","7.png","8.png","9.png"
-	  ,"10.png","11.png","12.jpg","13.png"];
+	  ,"10.png"];
 	  $scope.trust=["ichtr.png","kohinoortr.png","tandoortr.png"];
 	
 });

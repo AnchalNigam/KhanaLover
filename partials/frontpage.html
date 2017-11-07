@@ -7,30 +7,31 @@
      <div class="row">
        <h1 class="text-center listheading">Get your khana in khanaLover</h1><br/><br/>
     <div class="col-lg-3 col-lg-offset-1  col-sm-2 col-sm-offset-1 col-xs-offset-2">
-	  <img class="img-responsive " src="find.png">
+	  <img class="img-responsive center-block" src="find.png">
 	  <h5 class="size text-center"><strong>Choose best restaurant</strong></h5>
 		 
 	  </div>
 	  
 	 <div class="col-lg-3 col-lg-offset-1 col-sm-2 col-sm-offset-1 col-xs-offset-2">
-	  <img class="img-responsive " src="contact.png">
+	  <img class="img-responsive center-block" src="contact.png">
 	  <h4 class="size text-center"><strong>Contact them for your food</strong></h4><br/>
 		
 	 </div>
 	 <div class="col-lg-2 col-lg-offset-1  col-sm-2 col-sm-offset-1 col-xs-offset-2">
-	  <img class="img-responsive " src="enjoy.png"><br/>
-	   <h4 class="size"><strong>Enjoy food </strong></h4>
+	  <img class="img-responsive center-block" src="enjoy.png"><br/>
+	   <h4 class="size text-center"><strong>Enjoy food </strong></h4>
 		 
 	  </div>
 	  
 	</div><br/><br/><br/><br/>
+	<!--Allahabad most trusted restro-->
 	<div class="row">
        <h1 class="text-center listheading">Allahabad's Most Trusted Resturants</h1><br/><br/>
          <div class="col-md-9">
 		    <div ng-if="trust">
 
 		    
-		       <li class="navlist" ng-repeat="image in trust"> 
+		       <li class="navlist shift" ng-repeat="image in trust"> 
 			   <img  ng-src={{image}} >
 			   </li>
 		
@@ -43,8 +44,8 @@
 	</div><br/><br/><br/><br/>
 	<div class="row">
        
-         <div class="col-md-9  mycover"  style="background-image:url('get.jpg')"><br/><br/><br/>
-             <li class="btn btn-default btn-lg btnalign"><a href="#/restrolist"><strong>Get Your Resturant</a></strong></li>
+         <div class="col-md-9 mycover"  style="background-image:url('get.png')"><br/><br/><br/>
+             <li class="btn btn-default btn-lg btn-warning btnalign"><a href="#/restrolist"><strong>Get Your Resturant</a></strong></li>
 		
 		    
 		  </div>
@@ -54,20 +55,44 @@
 	
 	</div><br/><br/><br/><br/>
 	<div class="row">
-       <div class="col-md-9 thumbnail setting">
-			<h1 class="listheading"> Search Your Resturant by </h1>
-			  <img src="local.jpg">
+       <div class="col-md-11 thumbnail setting">
+			<h1 class="listheading"> Search Your Resturant by </h1><br/><br/>
+			  
+		 
+		   <div class="row">
+				<div class="col-lg-2 col-sm-2">
+				  <img class="img-responsive thumbnail center-block" src="local.png">
+				  <h5 class="size text-center"><strong>Locality</strong></h5>
+			 
+		  </div>
+		  
+		 <div class="col-lg-2 col-sm-2 col-sm-offset-1 col-xs-offset-2">
+		  <img class="img-responsive thumbnail  center-block" src="deliver.png">
+		  <h4 class="size text-center"><strong>Delivery</strong></h4><br/>
+			
 		 </div>
-          
+		 <div class="col-lg-2 col-lg-offset-1  col-sm-2 col-sm-offset-1 col-xs-offset-2">
+		  <img class="img-responsive thumbnail  center-block" src="cuisine.jpg">
+		   <h4 class="size text-center"><strong>Cuisines</strong></h4>
+			 
+		  </div>
+		  <div class="col-lg-2 col-lg-offset-1  col-sm-2 col-sm-offset-1 col-xs-offset-2">
+				  <img class="img-responsive thumbnail  center-block" src="cost.png">
+				  <h5 class="size text-center"><strong>Cost</strong></h5>
+			 
+		  </div>
+		  
+		  
+		</div> 
 	 
-	  
+	 </div> 
 	
 	</div>
 	
 	</div>
-	<div class="col-md-2">
-		 <ul ng-repeat="image in images">
-		    <li class="navlist " > 
+	<div class="col-md-2 visible-lg visible-md">
+		 <ul ng-repeat="image in images" class="list-unstyled">
+		    <li> 
 			   <img ng-src={{image}} >
 			   </li>
 		
@@ -77,5 +102,5 @@
 		
   </div>
 </div><br/><br/><br/>
-<!--Allahabad most trusted restro-->
+
 
