@@ -34,11 +34,11 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		category:"Casual.Dining",
 		vote:"4.8",
 		cuisines:"Modern Indian",
-		menu:["menu1.png","menu2.png","menu3.png"],
-		photo:["res1.png","res2.png","res3.png"],
+		menu:["image/menu1.png","image/menu2.png","image/menu3.png"],
+		photo:["image/res1.png","image/res2.png","image/res3.png"],
 		cost: "3000",
 		timing:"10AM to 12PM (MON-SUN)",
-		imageUrl:"conn.jpg",
+		imageUrl:"image/conn.jpg",
 		deliver:"45 minutes(Max.)",
 		num:["9026224948","9876543123","0532-2655090"],
 		review:200
@@ -50,11 +50,11 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		category:"Casual.Good for kids.Groups",
 		vote:"4.5",
 		cuisines:"Modern Indian",
-		menu:["menu1.png","menu2.png","menu3.png"],
-		photo:["res1.png","res2.png","res3.png"],
+		menu:["image/menu1.png","image/menu2.png","image/menu3.png"],
+		photo:["image/res1.png","image/res2.png","image/res3.png"],
 		cost: "2000",
 		timing:"8AM to 9PM (MON-SUN)",
-		imageUrl:"coffee.jpg",
+		imageUrl:"image/coffee.jpg",
 		deliver:"60 minutes(Max.)",
 		num:["9026224948","9876543123","0532-2655090"],
 		review:200
@@ -66,12 +66,12 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		category:"Casual.Good for kids.Groups",
 		vote:"4.0",
 		cuisines:"Modern Indian",
-		menu:["menu1.png","menu2.png","menu3.png"],
-		photo:["res1.png","res2.png","res3.png"],
+		menu:["image/menu1.png","image/menu2.png","image/menu3.png"],
+		photo:["image/res1.png","image/res2.png","image/res3.png"],
 			
 		cost: "1000",
 		timing:"10AM to 9PM (MON-SUN)",
-		imageUrl:"tandoor.jpg",
+		imageUrl:"image/tandoor.jpg",
 		deliver:"50 minutes(Max.)",
 		num:["9026224948","9876543123","0532-2655090"],
 		review:200
@@ -83,11 +83,11 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		category:"Casual.Groups",
 		vote:"4.2",
 		cuisines:"Indian",
-		menu:["menu1.png","menu2.png","menu3.png"],
-		photo:["res1.png","res2.png","res3.png"],
+		menu:["image/menu1.png","image/menu2.png","image/menu3.png"],
+		photo:["image/res1.png","image/res2.png","image/res3.png"],
 		cost: "2500",
 		timing:"10AM to 12PM (MON-SUN)",
-		imageUrl:"kohi.jpg",
+		imageUrl:"image/kohi.jpg",
 			deliver:"30 minutes(Max.)",
 			num:["9026224948","9876543123","0532-2655090"],
 			review:200
@@ -99,11 +99,11 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		category:"Good for kids.Sandwitches",
 		vote:"3.9",
 		cuisines:"Modern Indian",
-		menu:["menu1.png","menu2.png","menu3.png"],
-		photo:["res1.png","res2.png","res3.png"],
+		menu:["image/menu1.png","image/menu2.png","image/menu3.png"],
+		photo:["image/res1.png","image/res2.png","image/res3.png"],
 		cost: "1000",
 		timing:"9AM to 10PM (MON-SUN)",
-		imageUrl:"dewis.jpg",
+		imageUrl:"image/dewis.jpg",
 		deliver:"70 minutes(Max.)",
 		num:["9026224948","9876543123","0532-2655090"],
 		review:200
@@ -115,25 +115,25 @@ foodieapp.controller('restroListCtrl', function($scope,$routeParams) {
 		category:"Good for kids.Groups",
 		vote:"4.6",
 		cuisines:"Modern Indian",
-	    menu:["menu1.png","menu2.png","menu3.png"],
-		photo:["res1.png","res2.png","res3.png"],
+	    menu:["image/menu1.png","image/menu2.png","image/menu3.png"],
+		photo:["image/res1.png","image/res2.png","image/res3.png"],
 		cost: "500",
 		timing:"9AM to 10PM (MON-SUN)",
-		imageUrl:"eaton.jpg",
+		imageUrl:"image/eaton.jpg",
 		deliver:"45 minutes(Max.)",
 		num:["9026224948","9876543123","0532-2655090"],
 		review:200
 	}];
    $scope.resturant=resturants[$routeParams.id-1];
-    $scope.images=["14.jpg","15.png","16.jpg","17.jpg","5.png","6.png","7.png","8.png","9.png"
-	  ,"10.png","11.png","12.jpg","13.png"];
+    $scope.images=["image/14.jpg","image/15.png","image/16.jpg","image/17.jpg","image/5.png","image/6.png","image/7.png","image/8.png",
+	"image/9.png","image/10.png","image/11.png","image/12.jpg","image/13.png"];
      
 });
 
 foodieapp.controller('frontCtrl', function($scope) {
-	 $scope.images=["14.jpg","15.png","16.jpg","17.jpg","5.png","6.png","7.png","8.png","9.png"
-	  ,"10.png"];
-	  $scope.trust=["ichtr.png","kohinoortr.png","tandoortr.png"];
+	 $scope.images=["image/14.jpg","image/15.png","image/16.jpg","image/17.jpg","image/5.png","image/6.png","image/7.png",
+	 "image/8.png","image/9.png","image/10.png"];
+	  $scope.trust=["image/ichtr.png","image/kohinoortr.png","image/tandoortr.png"];
 	
 });
 foodieapp.controller('listRestro', function($scope) {
@@ -148,7 +148,7 @@ foodieapp.controller('listRestro', function($scope) {
 		id:1,
 		cost: "3000",
 		timing:"10AM to 12PM (MON-SUN)",
-		imageUrl:"conn.jpg",
+		imageUrl:"image/coffee.jpg",
 		deliver:"45 minutes(Max.)"
 	},
 	{
@@ -161,7 +161,7 @@ foodieapp.controller('listRestro', function($scope) {
 		id:2,
 		cost: "2000",
 		timing:"8AM to 9PM (MON-SUN)",
-		imageUrl:"coffee.jpg",
+		imageUrl:"image/conn.jpg",
 		deliver:"60 minutes(Max.)"
 		
 	},
@@ -175,7 +175,7 @@ foodieapp.controller('listRestro', function($scope) {
 		id:3,
 		cost: "1000",
 		timing:"10AM to 9PM (MON-SUN)",
-		imageUrl:"tandoor.jpg",
+		imageUrl:"image/tandoor.jpg",
 			deliver:"50 minutes(Max.)"
 	},
 	{
@@ -188,7 +188,7 @@ foodieapp.controller('listRestro', function($scope) {
 		id:4,
 		cost: "2500",
 		timing:"10AM to 12PM (MON-SUN)",
-		imageUrl:"kohi.jpg",
+		imageUrl:"image/kohi.jpg",
 		deliver:"30 minutes(Max.)"	
 	},
 	{
@@ -201,7 +201,7 @@ foodieapp.controller('listRestro', function($scope) {
 		id:5,
 		cost: "1000",
 		timing:"9AM to 10PM (MON-SUN)",
-		imageUrl:"dewis.jpg",
+		imageUrl:"image/dewis.jpg",
 		
 		deliver:"70 minutes(Max.)"
 	},
@@ -215,11 +215,11 @@ foodieapp.controller('listRestro', function($scope) {
 		id:6,
 		cost: "500",
 		timing:"9AM to 10PM (MON-SUN)",
-		imageUrl:"eaton.jpg",
+		imageUrl:"image/eaton.jpg",
 		deliver:"45 minutes(Max.)"
 		
 	}];
-	  $scope.images=["14.jpg","15.png","16.jpg","17.jpg","5.png","6.png","7.png","8.png","9.png"
-	  ,"10.png","11.png","12.jpg","13.png"];
+	  $scope.images=["image/14.jpg","image/15.png","image/16.jpg","image/17.jpg","image/5.png","image/6.png","image/7.png","image/8.png"
+	  ,"image/9.png","image/10.png","image/11.png","image/12.jpg","image/13.png"];
    
 });
